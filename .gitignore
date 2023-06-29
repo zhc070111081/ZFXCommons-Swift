@@ -2,8 +2,12 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+
 ## User settings
 xcuserdata/
+*.xcuserstate
+*.DS_Store
+*/.DS_Store
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
@@ -59,6 +63,11 @@ playground.xcworkspace
 # Add this line if you want to avoid checking in source code from the Xcode workspace
 # *.xcworkspace
 
+Pods/
+!Podfile
+!Podfile.lock
+/ios/Pods/
+
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
@@ -69,6 +78,27 @@ Carthage/Build/
 # Accio dependency management
 Dependencies/
 .accio/
+
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
 
 # fastlane
 #
